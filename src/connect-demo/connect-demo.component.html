@@ -1,0 +1,8 @@
+<!-- Access top level state properties easily from the cs.state Signal -->
+<h3>ComponentStore connect method</h3>
+<ng-container *ngIf="cs.state() as state"> 
+  <pre>
+    counterFromRxJS: {{state.counterFromRxJS}},
+    counterFromSignal: {{state.counterFromSignal}}
+  </pre>  
+</ng-container>
